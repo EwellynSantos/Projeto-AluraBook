@@ -61,3 +61,53 @@ se o botão estiver checked, o lista menu ira aparecer, usando o elemento displa
 .container__botao{
     display: none;
 }
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container__titulo{
+        display: block;
+    }
+
+    .container__titulo,
+    .container__titulo-negrito{
+        font-size: 30px;
+        font-family: var(--fonte-secundaria);
+    }
+
+    .container__titulo{
+        font-weight: 400;
+    }
+
+    .container__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-tranparente{
+        display: none;
+    }
+    
+    
+}
+
