@@ -1,0 +1,63 @@
+.cabecalho__menu {
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/Menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /*menu-hamburger*/
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+
+}
+
+.lista-menu { /*menu-hamburger*/
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+
+/* o ~ é como uma condicional(if) no css.
+se o botão estiver checked, o lista menu ira aparecer, usando o elemento display block*/
+.container__botao:checked ~ .lista-menu { /*menu-hamburger*/
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao{
+    display: none;
+}
